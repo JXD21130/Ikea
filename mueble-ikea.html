@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mueble raro de IKEA</title>
+<title>Cosa rara de IKEA</title>
 <style>
   :root { --bg:#f5f5f5; --fg:#111; --btn:#0058a3; --btn-fg:#fff; --link:#0058a3; }
   @media (prefers-color-scheme: dark) {
@@ -20,16 +20,24 @@
 </style>
 </head>
 <body>
-  <button id="btn">Dame un mueble</button>
+  <button id="btn">Dame algo de IKEA</button>
   <div id="nombre"></div>
   <div id="enlace"></div>
 
 <script>
   const nombres = [
+    // Muebles
     "FJÄLLBO","GRÖNLID","KNARREVIK","TJUSIG","SKUBB","FLISAT","SMÅSTAD","TROFAST",
     "FRIHETEN","BEKVÄM","SÖDERHAMN","KLIPPAN","VITTSJÖ","SKRUVSTA","TÄRNABY","LIDHULT",
     "SUNDVIK","FLÄRKE","SLÄKT","URSKOG","STUVA","BRIMNES","KIVIK","POÄNG","FÖRHÖJA",
-    "HEMNES","KALLAX","EKTORP","BESTÅ","PLATSA","NORDLI","SANDSBERG","STOCKHOLM","GURLI"
+    "HEMNES","KALLAX","EKTORP","BESTÅ","PLATSA","NORDLI","SANDSBERG","STOCKHOLM","GURLI",
+    "PAX","IVAR","RÅSKOG","SKÅDIS","MAMMUT","DUKTIG","LILLABO",
+    // Decoración, textil, hogar, peluches
+    "BLÅHAJ","FRAKTA","TERTIAL","LOHALS","HEKTAR","FADO","SMYCKA","KNODD","DRÖNA",
+    // Cocina y mesa
+    "FÄRGKLAR","POKAL","OFTAST","VARDAGEN",
+    // Comida
+    "KÖTTBULLAR","SYLT LINGON","GLÖGG","PRINSESSTÅRTA","DRÖMTÅRTA","GRAVAD LAX","DAIM","RÄKSMÖRGÅS"
   ];
   let ultimo = "";
   document.getElementById("btn").addEventListener("click", () => {
